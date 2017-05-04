@@ -13,11 +13,30 @@
   </head> 
   <body> 
 	<div id ="container"> </div> 
+	
 	<script type ="text/babel"> 
-	    ReactDOM.render( 
-		   <div> render </div>, 
-		   document.querySelector("#container") 
-		); 
+	  var Square = React.createClass({ 
+	    render: function() { 
+	      return( <p>Nothing</p> ); 
+	    } 
+	  });
+	  
+	  var Label = React.createClass({ 
+	    render: function() { 
+		  return ( <p>Nothing</p> ); 
+		} 
+	  });
+	  
+	  var Card = React.createClass({
+	    render: function() { 
+		  return ( ); 
+		} 
+	  });
+	  
+	  ReactDOM.render( 
+		<div> render </div>, 
+		document.querySelector("#container") 
+	  ); 
     </script> 
   </body> 
 </html>
